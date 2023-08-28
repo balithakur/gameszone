@@ -3,5 +3,5 @@ from django.urls import path
 from firstApp import views
 
 urlpatterns = [
-    path("", views.home, name='navbar'),
+    path("", views.landingpage, name='landingpage'),
 ]
