@@ -1,0 +1,1 @@
+web: gunicorn gurukul_backend.wsgi  --log-file  -
