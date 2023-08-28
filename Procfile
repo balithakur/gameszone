@@ -1,1 +1,1 @@
-web: gunicorn gurukul_backend.wsgi  --log-file  -
+web: gunicorn myfirstproject.wsgi  --log-file -
