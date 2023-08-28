@@ -1,0 +1,59 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+.main_div{
+    background-color: black;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.main_h1 h1{
+    color: white;
+    font-weight: 400;
+    font-family: poppins;
+    margin-top: 80px;
+}
+.p p{
+    text-align: center;
+    color: white;
+    font-weight: 400;
+    font-family: manrope;
+    margin-top: 50px;
+    letter-spacing: 1.5px;
+    word-spacing: 3px;
+}
+.gamerszone_btn{
+    min-width:200px;
+    height: 60px;
+    text-align: center;
+    background-color: white;
+    color: black;
+    font-weight: 600;
+    font-family: manrope;
+    margin-top: 40px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+.exit_p{
+        text-align: center;
+        color: white;
+        font-weight: 400;
+        font-family: manrope;
+        margin-top: 50px;
+        letter-spacing: 1.5px;
+        word-spacing: 3px;
+}
+.exit_btn{
+    min-width:150px;
+    height: 60px;
+    text-align: center;
+    background-color: white;
+    color: black;
+    font-weight: 600;
+    font-family: manrope;
+    margin-top: 40px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
