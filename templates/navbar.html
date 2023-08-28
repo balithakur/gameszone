@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="{% static "navbar.css" %} ">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karma:wght@300;400&family=Manrope:wght@400;600;700;800&family=Poppins:ital,wght@0,100;0,500;1,500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo_text">
+            <h1 class="black">Tech</h1>
+            <h1 class="red">Blogger</h1>
+        </div>
+        <div class="navlink">
+            <ul>
+                <li ><h1 id="first">Home</h1></li>
+                <li ><h1 id="second">Home</h1></li>
+                <li ><h1 id="third">Home</h1></li>
+                <li ><h1 id="fourth">Home</h1></li>
+                <li ><h1 id="fifth">Home</h1></li>
+            </ul>
+        </div>
+        <div class="mobile_nav">
+            <img src="{% static "images/navbar_images/menu.webp"%}" alt="menu_image" id="menu_image">
+            <img src= "{% static "images/navbar_images/menu.webp"%}" alt="closing_image" id="close_image" onclick="handleCloseImageClick()">
+        </div>
+        <div class="mobile_navlink" id="mobile_navlink">
+            <div class="mobile_link">
+                <ul>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">home</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script>
+            let nav_three_line_image = document.getElementById("menu_image");
+            let mobile_navlink = document.getElementById("mobile_navlink");
+            let close_image = document.getElementById("close_image");
+
+            nav_three_line_image.onclick = () => {
+                mobile_navlink.style.visibility = "visible";
+                mobile_navlink.style.animationName = "mobile_navlink";
+                mobile_navlink.style.animationDuration = ".9s";
+                mobile_navlink.style.width = "100%";
+                nav_three_line_image.style.animationName = "rotate";
+                nav_three_line_image.style.animationDuration = ".5s";
+                close_image.style.animationName = "norotate";
+                close_image.style.animationDuration = ".5s";
+
+                const time = setTimeout(() => {        
+                    close_image.style.visibility = "visible";
+                }, 500);
+
+                const crosstime = setTimeout(() => {
+                    nav_three_line_image.style.display = "none";
+                    close_image.style.display = "inline-block";
+                    close_image.style.visibility = "visible";
+                }, 400);
+            };
+            close_image.onclick = () => {
+                mobile_navlink.style.animationName = "backdrop_mobile_navlink";
+                mobile_navlink.style.animationDuration = ".9s";
+                mobile_navlink.style.width = "0%";
+                close_image.style.animationName = "rotate";
+                close_image.style.animationDuration = ".5s";
+                nav_three_line_image.style.animationName = "norotate";
+                nav_three_line_image.style.animationDuration = ".5s";
+                
+                const crosstime = setTimeout(() => {
+                    close_image.style.display = "none";
+                    nav_three_line_image.style.display = "inline-block";
+                    nav_three_line_image.style.visibility = "visible";
+                }, 400);
+            }
+
+            // Define the media quer
+            
+        const mediaQuery = window.matchMedia('(max-width: 999px)');
+
+        // Define a function to handle the media query change
+        function handleMediaQueryChange(mediaQuery) {
+          if (mediaQuery.matches) {
+            nav_three_line_image.style.display = "inline-block"
+          } else {
+            nav_three_line_image.style.display = "none"
+            mobile_navlink.style.visibility = "hidden"
+            close_image.style.display = "none"
+          }
+        }
+        // Add an event listener to track media query changes
+        mediaQuery.addListener(handleMediaQueryChange);
+        // Initial call to the function to handle the current media query status
+        handleMediaQueryChange(mediaQuery);
+
+
+        let first = document.getElementById("first");
+        let second = document.getElementById("second");
+        let third = document.getElementById( "third");
+        let fourth = document.getElementById("fourth");
+        let fifth = document.getElementById("fifth");
+
+        first.style.borderBottom = "3px solid red"
+        first.onclick = () =>{
+            first.style.animationName = "border_bottom"
+            first.style.animationDuration = ".5s"
+            first.style.borderBottom = "3px solid red"
+            second.style.borderBottom = "0px"
+            third.style.borderBottom = "0px"
+            fourth.style.borderBottom = "0px"
+            fifth.style.borderBottom = "0px"
+        }
+        second.onclick = () => {
+            second.style.animationName = "border_bottom"
+            second.style.animationDuration = ".5s"
+            second.style.borderBottom = "3px solid red"
+            first.style.borderBottom = "0px"
+            third.style.borderBottom = "0px"
+            fourth.style.borderBottom = "0px"
+            fifth.style.borderBottom = "0px"
+        }
+        third.onclick = () => {
+            third.style.animationName = "border_bottom"
+            third.style.animationDuration = ".5s"
+            third.style.borderBottom = "3px solid red"
+            first.style.borderBottom = "0px"
+            second.style.borderBottom = "0px"
+            fourth.style.borderBottom = "0px"
+            fifth.style.borderBottom = "0px"
+        }
+        fourth.onclick = () => {
+            fourth.style.animationName = "border_bottom"
+            fourth.style.animationDuration = ".5s"
+            fourth.style.borderBottom = "3px solid red"
+            first.style.borderBottom = "0px"
+            third.style.borderBottom = "0px"
+            second.style.borderBottom = "0px"
+            fifth.style.borderBottom = "0px"
+        }
+        fifth.onclick = () => {
+            fifth.style.animationName = "border_bottom"
+            fifth.style.animationDuration = ".5s"
+            fifth.style.borderBottom = "3px solid red"
+            first.style.borderBottom = "0px"
+            third.style.borderBottom = "0px"
+            fourth.style.borderBottom = "0px"
+            second.style.borderBottom = "0px"
+        }
+    </script>
+</body>
+</html>
