@@ -36,7 +36,9 @@
 .tournament{
     width:90vw;
     height: auto;
-    border:1px solid white;
+    border:5px solid white;
+    box-shadow: 0 0 8px 0;
+    border-radius: 20px;
 }
 .tournament h1{
     color:white;
@@ -51,7 +53,7 @@
     text-align: center;
 }
 .prize{
-    color:white;
+    color:red;
     font-weight: 400;
     font-family: poppins;
     text-align: center;
