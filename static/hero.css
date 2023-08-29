@@ -8,16 +8,3 @@
     display: flex; 
     justify-content: center;
 }
-.hero_section video{
-    min-height:50vh;
-}
-@media (max-width:500px){
-    .hero_section video{
-        min-height: 154px;
-    }
-}
-@media (max-width:300px){
-    .hero_section video{
-        min-height: 120px;
-    }
-}

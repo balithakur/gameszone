@@ -119,19 +119,17 @@
     100%{
         position: absolute;
         left:0%;
-        width:100%;
     }
 }
 @keyframes backdrop_mobile_navlink{
     0%{
         position: absolute;
         left:0%;
-        width:100%;
+        width:100vw;
     }
     100%{
         position: absolute;
         left:-100%;
-        width:0vw;
     }
 }
 @keyframes opacity{
