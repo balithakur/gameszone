@@ -10,7 +10,7 @@
     justify-content: center;
 }
 .hero_section video{
-    max-height: 700px;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
+    height: auto;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
 }
