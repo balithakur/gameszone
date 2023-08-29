@@ -61,7 +61,6 @@
 .mobile_nav{
     width:10%;
     position: relative;
-    left:85%;
 }
 .mobile_nav img{
     width:25px;
@@ -155,7 +154,7 @@
 }
 @media (min-width:0px) and (max-width:499px){
     .mobile_nav{
-       left:80%;
+       left:0%;
     }
 }
 @media (min-width:999px){
