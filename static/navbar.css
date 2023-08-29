@@ -100,6 +100,7 @@
     padding:10px;
     position: relative;
     bottom:90px;
+    text-align: center;
 }
 .mobile_link ul li a{
     text-decoration: none;
@@ -112,18 +113,33 @@
 
 @keyframes mobile_navlink{
     0%{
-        width:0vw;
+        position: absolute;
+        left:-100%;
     }
     100%{
+        position: absolute;
+        left:0%;
         width:100%;
     }
 }
 @keyframes backdrop_mobile_navlink{
     0%{
+        position: absolute;
+        left:0%;
         width:100%;
     }
     100%{
+        position: absolute;
+        left:-100%;
         width:0vw;
+    }
+}
+@keyframes opacity{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
     }
 }
 @keyframes rotate{
