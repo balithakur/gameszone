@@ -28,3 +28,31 @@
         padding-top: 40px;
     }
 }
+.tournament_showcase_div{
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+.tournament{
+    width:90vw;
+    height: auto;
+    border:1px solid white;
+}
+.tournament h1{
+    color:white;
+    font-weight: 400;
+    font-family: poppins;
+    text-align: center;
+}
+.timer{
+    color:white;
+    font-weight: 400;
+    font-family: poppins;
+    text-align: center;
+}
+.prize{
+    color:white;
+    font-weight: 400;
+    font-family: poppins;
+    text-align: center;
+}
