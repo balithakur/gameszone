@@ -4,7 +4,13 @@
     background-color: black;
 }
 .hero_section{
+    width: 100%;
     overflow: hidden;  
     display: flex; 
     justify-content: center;
+}
+.hero_section video{
+    min-height: 600px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
 }
