@@ -75,6 +75,7 @@
     display: none;
 }
 .mobile_navlink{
+    background-color: white;
     display: none;
     height:100vh;
     width:100%;
@@ -86,7 +87,14 @@
     visibility: hidden;
     overflow: hidden;
 }
+.mobile_link{
+    background-color: white;
+}
+.mobile_link ul {
+    background-color: white;
+}
 .mobile_link ul li{
+    background-color: white;
     list-style: none;
     margin: 20px;
     padding:10px;
@@ -98,6 +106,7 @@
     font-family: Poppins;
     font-weight: 600;
     font-size: 22px;
+    background-color: white;
     color: black;
 }
 
