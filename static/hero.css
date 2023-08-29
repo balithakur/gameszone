@@ -11,3 +11,33 @@
 .hero_section video{
     min-height:50vh;
 }
+@media (max-width:500px){
+    .hero_section video{
+        position: absolute;
+        top:80px;
+    }
+}
+@media (max-width:450px){
+    .hero_section video{
+        position: absolute;
+        top:73px;
+    }
+}
+@media (max-width:400px){
+    .hero_section video{
+        position: absolute;
+        top:70px;
+    }
+}
+@media (max-width:350px){
+    .hero_section video{
+        position: absolute;
+        top:50px;
+    }
+}
+@media (max-width:330px){
+    .hero_section video{
+        position: absolute;
+        top:45px;
+    }
+}
