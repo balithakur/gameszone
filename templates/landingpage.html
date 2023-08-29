@@ -24,11 +24,21 @@
             <p class="h5">Gamerszone is a 18+ Tournament/Esports website where you can play tournament and earn money.
                 By entering and using this website you agree to the <u>Terms of Use</u> and <u>Privacy Policy.</u></p>
         </div>
-        <button class="gamerszone_btn h5">Enter Gamerszone</button>
+        <button class="gamerszone_btn h5" id="homebtn">Enter Gamerszone</button>
         <p class="h5 exit_p">If you are not 18+ then please leave this website</p>
-            <button class="exit_btn h5">Leave</button>
+            <button class="exit_btn h5" id="exitbtn">Leave</button>
 
     </div>
+    <script>
+      let homebtn = document.getElementById("homebtn")
+      let exitbtn = document.getElementById("exitbtn")
+      homebtn.onclick = () => {
+          location.href = "home"
+      }
+      exitbtn.onclick = () => {
+          location.href ="https://www.google.com/"
+      }
+  </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
   </body>
 </html>

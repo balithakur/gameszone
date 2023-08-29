@@ -5,6 +5,6 @@ def landingpage(request):
     return render(request, 'landingpage.html')
 
 
-def home(request):
+def homepage(request):
     #return HttpResponse("this is homepage")
-    return render(request, 'navbar.html')
+    return render(request, 'home.html')

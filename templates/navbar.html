@@ -14,12 +14,12 @@
 <body>
     <div class="navbar">
         <div class="logo_text">
-            <h1 class="black">Games</h1>
+            <h1 class="black">Gamers</h1>
             <h1 class="red">Zone</h1>
         </div>
         <div class="navlink">
             <ul>
-                <li ><h1 id="first">Home</h1></li>
+                <li ><h1 id="first" class="first">Home</h1></li>
                 <li ><h1 id="second">LogIn</h1></li>
                 <li ><h1 id="third">Create Account</h1></li>
                 <li ><h1 id="fourth">About Us</h1></li>
@@ -111,8 +111,6 @@
 
         first.style.borderBottom = "3px solid red"
         first.onclick = () =>{
-            first.style.animationName = "border_bottom"
-            first.style.animationDuration = ".5s"
             first.style.borderBottom = "3px solid red"
             second.style.borderBottom = "0px"
             third.style.borderBottom = "0px"
@@ -120,40 +118,32 @@
             fifth.style.borderBottom = "0px"
         }
         second.onclick = () => {
-            second.style.animationName = "border_bottom"
-            second.style.animationDuration = ".5s"
-            second.style.borderBottom = "3px solid red"
             first.style.borderBottom = "0px"
+            second.style.borderBottom = "3px solid red"
             third.style.borderBottom = "0px"
             fourth.style.borderBottom = "0px"
             fifth.style.borderBottom = "0px"
         }
         third.onclick = () => {
-            third.style.animationName = "border_bottom"
-            third.style.animationDuration = ".5s"
-            third.style.borderBottom = "3px solid red"
-            first.style.borderBottom = "0px"
+           first.style.borderBottom = "0px"
             second.style.borderBottom = "0px"
+            third.style.borderBottom = "3px solid red"
             fourth.style.borderBottom = "0px"
             fifth.style.borderBottom = "0px"
         }
         fourth.onclick = () => {
-            fourth.style.animationName = "border_bottom"
-            fourth.style.animationDuration = ".5s"
-            fourth.style.borderBottom = "3px solid red"
             first.style.borderBottom = "0px"
-            third.style.borderBottom = "0px"
             second.style.borderBottom = "0px"
+            third.style.borderBottom = "0px"
+            fourth.style.borderBottom = "3px solid red"
             fifth.style.borderBottom = "0px"
         }
         fifth.onclick = () => {
-            fifth.style.animationName = "border_bottom"
-            fifth.style.animationDuration = ".5s"
-            fifth.style.borderBottom = "3px solid red"
             first.style.borderBottom = "0px"
+            second.style.borderBottom = "0px"
             third.style.borderBottom = "0px"
             fourth.style.borderBottom = "0px"
-            second.style.borderBottom = "0px"
+            fifth.style.borderBottom = "3px solid red"
         }
     </script>
 </body>

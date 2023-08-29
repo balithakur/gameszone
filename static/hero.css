@@ -1,0 +1,13 @@
+*{
+    margin:0px;
+    padding: 0px;
+    background-color: black;
+}
+.hero_section{
+    overflow: hidden;  
+    display: flex; 
+    justify-content: center;
+}
+.hero_section video{
+    min-height:50vh;
+}
