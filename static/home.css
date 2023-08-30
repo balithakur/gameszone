@@ -96,80 +96,59 @@
 }
 .tournament_showcase_div{
     display: flex;
-    justify-items: center;
+    flex-direction: column;
+    align-items: center;
 }
-.game_list_div h1{
+.gamelist_h1{
     color: white;
     font-weight: 400;
     font-family: poppins;
     text-align: center;
 }
 .game_div{
-    width: 95vw;
+    width: 95%;
+    min-height: 150px;
     border: 1px solid grey;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display:flex;
     margin-top: 50px;
-}
-.game_div button{
-    max-width:60vw;
-    min-height: 60px;
-    background-color: white;
-    font-size: 24px;
-    border-radius: 10px;
-    font-family: poppins;
-    font-weight: 500;
-    border: 1px solid black;
-    box-shadow: 0 0 8px 0 red;
-    padding:15px;
-    margin-top: 40px;
-    margin-bottom: 30px;
+    background-color: grey;
+    border-radius: 20px;
+    justify-content: space-evenly;
 }
 .freefire{
-    display: flex;
-    margin-top: 60px;
+    width:300px;
+    display: inline-block;
+    background-color: grey;
 }
-.ff_img{
-    width: 50%;
-}
-.ff_img img{
-    margin-top: 80px;
-    width:40vw;
+.freefire img{
+    width:300px;
     height: auto;
-}
-.ff_content h1{
-    text-align: center;
-}
-.ff_content p{
-    color: white;
-    font-family: 500;
-    font-family: poppins;
+    display: inline-block;
+    border: 5px solid grey;
 }
 @media (max-width:999px){
     .freefire{
-        margin-top: 0px;
+        width:210px;
+    }
+    .freefire img{
+        width:210px;
+    }
+    .game_div{
+        min-height: 120px;
+    }
+}
+@media (max-width:999px){
+    .game_div{
         flex-direction: column;
+        width:100%;
+        justify-content: center;
+        align-items: center;
     }
-    .ff_img img{
-        width: 100%;
+    .freefire{
+        width:90%;
     }
-    .ff_img{
-        width: 100%;
+    .freefire img{
+        width:100%;
     }
-}
-@media (max-width:700px){
-    .game_div button{
-        font-size: 20px;
-    }
-}
-@media (max-width:500px){
-    .game_div button{
-        font-size: 16px;
-    }
-}
-@media (max-width:400px){
-    .game_div button{
-        font-size: 12px;
-    }
+
 }
