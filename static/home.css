@@ -137,7 +137,7 @@
         min-height: 120px;
     }
 }
-@media (max-width:999px){
+@media (max-width:710px){
     .game_div{
         flex-direction: column;
         width:100%;
@@ -149,6 +149,46 @@
     }
     .freefire img{
         width:100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 
+}
+.earnmoney_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.earnmoney_h1{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    justify-content: center;
+    padding-top: 80px;
+    text-align: center;
+}
+.normal{
+    color: white;
+    font-weight: 400;
+    font-family: poppins;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+    display: inline-block;
+}
+.green{
+    color: green;
+    font-weight: 800;
+    font-family: poppins;
+}
+.red_h2{
+    font-size: 42px;
+    color: red;
+}
+.money{
+    width:100%;
+}
+.money img{
+    width:30vw;
 }
