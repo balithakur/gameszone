@@ -54,9 +54,8 @@
 .timer{
     font-weight: 400;
     font-family: poppins;
-    text-align: center;
+    text-align: center; 
     background-color: white;
-    
 }
 .prize{
     color:red;
@@ -92,6 +91,85 @@
 }
 @media (max-width:290px){
     .join_tournament{
+        font-size: 12px;
+    }
+}
+.tournament_showcase_div{
+    display: flex;
+    justify-items: center;
+}
+.game_list_div h1{
+    color: white;
+    font-weight: 400;
+    font-family: poppins;
+    text-align: center;
+}
+.game_div{
+    width: 95vw;
+    border: 1px solid grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+.game_div button{
+    max-width:60vw;
+    min-height: 60px;
+    background-color: white;
+    font-size: 24px;
+    border-radius: 10px;
+    font-family: poppins;
+    font-weight: 500;
+    border: 1px solid black;
+    box-shadow: 0 0 8px 0 red;
+    padding:15px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+.freefire{
+    display: flex;
+    margin-top: 60px;
+}
+.ff_img{
+    width: 50%;
+}
+.ff_img img{
+    margin-top: 80px;
+    width:40vw;
+    height: auto;
+}
+.ff_content h1{
+    text-align: center;
+}
+.ff_content p{
+    color: white;
+    font-family: 500;
+    font-family: poppins;
+}
+@media (max-width:999px){
+    .freefire{
+        margin-top: 0px;
+        flex-direction: column;
+    }
+    .ff_img img{
+        width: 100%;
+    }
+    .ff_img{
+        width: 100%;
+    }
+}
+@media (max-width:700px){
+    .game_div button{
+        font-size: 20px;
+    }
+}
+@media (max-width:500px){
+    .game_div button{
+        font-size: 16px;
+    }
+}
+@media (max-width:400px){
+    .game_div button{
         font-size: 12px;
     }
 }
