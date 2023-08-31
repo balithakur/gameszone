@@ -2,6 +2,21 @@
     margin:0px;
     padding:0px;
 }
+/* change scroll bar css*/
+
+body::-webkit-scrollbar {
+    width: 7.5px; /* Width of the scrollbar */
+  }
+  
+  /* Track */
+  body::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Background color of the track */
+  }
+  
+  /* Handle */
+  body::-webkit-scrollbar-thumb {
+    background: black; /* Color of the handle */
+  }
 .tagline_div{
     height:auto;
     display: flex;
@@ -176,6 +191,9 @@
         margin-top: 20px;
     }
 }
+
+/* earn money div css*/
+
 .earnmoney_div{
     display: flex;
     align-items: center;
@@ -203,6 +221,50 @@
 .money{
     width:100%;
 }
-.money img{
-    width:30vw;
+.money_img{
+    margin-top: 10px;
+    padding-top: 100px;
+    width:15vw;
 }
+.character_img{
+    width: 22.5vw;
+}
+@media (max-width:999px){
+    .normal{
+        font-size: 28px;
+    }
+    .green{
+        font-size: 28px;
+    }
+    .red_h2{
+        font-size: 28px;
+    }
+}
+@media (max-width:750px){
+    .normal{
+        font-size: 24px;
+    }
+    .green{
+        font-size: 24px;
+    }
+    .red_h2{
+        font-size: 24px;
+    }
+}
+@media (max-width:600px){
+    .normal{
+        font-size: 20px;
+    }
+    .green{
+        font-size: 20px;
+    }
+    .red_h2{
+        font-size: 18px;
+    }
+    .money_img{
+        margin-top: 0px;
+        padding-top: 50px;
+    }
+}
+
+
