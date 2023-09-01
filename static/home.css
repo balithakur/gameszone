@@ -429,3 +429,17 @@ body::-webkit-scrollbar {
         margin-top: 15px;
     }
 }
+.second_one{
+    width:30%;
+}
+.second_third{
+    width: 30%;
+}
+@media (max-width:900px){
+    .second_second h3{
+        font-size: 3vw;
+    }
+    .second_second h4{
+        font-size: 1.4vw;
+    }
+}
