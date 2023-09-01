@@ -363,6 +363,7 @@ body::-webkit-scrollbar {
     display: flex;
     width: 90%;
     margin-top: 50px;
+    border-bottom: .5px solid grey;
 }
 .one{
     width: 20%;
@@ -400,9 +401,8 @@ body::-webkit-scrollbar {
     align-items: center;
 }
 .third img{
-    width: 70%;
+    width: 100%;
     height: auto;
-    padding-left: 15%;
 }
 @media (max-width:999px){
     .smallfont{
@@ -417,7 +417,7 @@ body::-webkit-scrollbar {
     .first_thing{
         padding-left: 0px;
     }
-    .work_tag{
+    .gamerszone_working h1{
         font-size: 9vw;
     }
 }
