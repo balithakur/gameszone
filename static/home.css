@@ -360,18 +360,62 @@ body::-webkit-scrollbar {
 }
 .first_thing{
     display: flex;
-    width: 90%;
+    width: 100%;
+    margin-top: 80px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
-.first_thing h2{
+.one{
+    width: 20%;
+}
+.one h2{
     font-size: 17vw;
     color: white;
     font-weight: 600;
     font-family: poppins;
 }
-.first_thing img {
-    width: 10%;
-    height: 10%;
+.second{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
-.questionmark{
+.second_text{
+    font-size: 38px;
+    color: white;
+    font-weight: 600;
+    font-family: poppins;
+    text-align: center;
+}
+.smallfont{
+    font-size: 20px;
+}
+.bgblack{
     background-color: black;
+}
+.third{
+    width: 28%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.third img{
+    width: 50%;
+    height: auto;
+}
+@media (max-width:999px){
+    .smallfont{
+        font-size: 2.5vw;
+    }
+    .third img{
+        width: 65%;
+    }
+    .bigfont{
+        font-size: 5vw;
+    }
+    .first_thing{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
 }
