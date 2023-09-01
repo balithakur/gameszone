@@ -344,13 +344,14 @@ body::-webkit-scrollbar {
 /* gamerszone working div css*/
 
 .gamerszone_working_div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding-top: 100px;
 }
 .gamerszone_working{
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .gamerszone_working h1{
     text-align: center;
@@ -360,10 +361,8 @@ body::-webkit-scrollbar {
 }
 .first_thing{
     display: flex;
-    width: 100%;
-    margin-top: 80px;
-    padding-left: 50px;
-    padding-right: 50px;
+    width: 90%;
+    margin-top: 50px;
 }
 .one{
     width: 20%;
@@ -375,7 +374,7 @@ body::-webkit-scrollbar {
     font-family: poppins;
 }
 .second{
-    width: 50%;
+    width: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -395,14 +394,15 @@ body::-webkit-scrollbar {
     background-color: black;
 }
 .third{
-    width: 28%;
+    width: 20%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .third img{
-    width: 50%;
+    width: 70%;
     height: auto;
+    padding-left: 15%;
 }
 @media (max-width:999px){
     .smallfont{
@@ -416,6 +416,16 @@ body::-webkit-scrollbar {
     }
     .first_thing{
         padding-left: 0px;
-        padding-right: 0px;
+    }
+    .work_tag{
+        font-size: 9vw;
+    }
+}
+@media (max-width:550px){
+    .gamerszone_working_div{
+        padding-top: 60px;
+    }
+    .first_thing{
+        margin-top: 15px;
     }
 }
