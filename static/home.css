@@ -336,3 +336,42 @@ body::-webkit-scrollbar {
         min-height: 50px;
     }
 }
+.bold{
+    background-color: white;
+    color: red;
+}
+
+/* gamerszone working div css*/
+
+.gamerszone_working_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+.gamerszone_working{
+    width: 100%;
+}
+.gamerszone_working h1{
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    font-family: poppins;
+}
+.first_thing{
+    display: flex;
+    width: 90%;
+}
+.first_thing h2{
+    font-size: 17vw;
+    color: white;
+    font-weight: 600;
+    font-family: poppins;
+}
+.first_thing img {
+    width: 10%;
+    height: 10%;
+}
+.questionmark{
+    background-color: black;
+}
