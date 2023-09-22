@@ -37,7 +37,7 @@
     padding-top: 25px;
     padding-left: 40px;
 }
-.navlink ul li h1{
+.navlink ul li a{
     text-decoration: none;
     color:white;
     font-family: Manrope;

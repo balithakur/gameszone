@@ -8,3 +8,7 @@ def landingpage(request):
 def homepage(request):
     #return HttpResponse("this is homepage")
     return render(request, 'home.html')
+
+def loginpage(request):
+    #return HttpResponse("this is homepage")
+    return render(request, 'login.html')
